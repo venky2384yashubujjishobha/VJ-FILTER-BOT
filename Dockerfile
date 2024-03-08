@@ -8,7 +8,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /MoviessGallery_Bot
-WORKDIR /MoviessGallery_Bot
+RUN mkdir /Moviessgallery_Bot
+WORKDIR /Moviessgallery_Bot
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
